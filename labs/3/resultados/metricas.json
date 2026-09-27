@@ -1,0 +1,162 @@
+[
+  {
+    "buffer_size": 65536,
+    "sort": {
+      "buffer_size": 65536,
+      "buffer_pages": 16,
+      "fan_in": 15,
+      "input_pages": 4349,
+      "runs_generated": 272,
+      "merge_passes": 3,
+      "pages_read": 17396,
+      "pages_written": 17396,
+      "time_phase1_sec": 0.5579667499987409,
+      "time_phase2_sec": 1.6563971659634262,
+      "time_total_sec": 2.214363915962167,
+      "io_total": 34792
+    },
+    "hash": {
+      "buffer_size": 65536,
+      "buffer_pages": 16,
+      "partitions_created": 15,
+      "groups": 6393,
+      "max_groups_in_partition": 458,
+      "partition_pages_min": 157,
+      "partition_pages_max": 190,
+      "pages_read": 5229,
+      "pages_written": 2617,
+      "time_phase1_sec": 0.41545258299447596,
+      "time_phase2_sec": 0.2656216659815982,
+      "time_total_sec": 0.6810742489760742,
+      "io_total": 7846
+    }
+  },
+  {
+    "buffer_size": 131072,
+    "sort": {
+      "buffer_size": 131072,
+      "buffer_pages": 32,
+      "fan_in": 31,
+      "input_pages": 4349,
+      "runs_generated": 136,
+      "merge_passes": 2,
+      "pages_read": 13047,
+      "pages_written": 13047,
+      "time_phase1_sec": 0.5517250000266358,
+      "time_phase2_sec": 1.1174366670893505,
+      "time_total_sec": 1.6691616671159863,
+      "io_total": 26094
+    },
+    "hash": {
+      "buffer_size": 131072,
+      "buffer_pages": 32,
+      "partitions_created": 31,
+      "groups": 6393,
+      "max_groups_in_partition": 251,
+      "partition_pages_min": 72,
+      "partition_pages_max": 101,
+      "pages_read": 5238,
+      "pages_written": 2626,
+      "time_phase1_sec": 0.4253431670367718,
+      "time_phase2_sec": 0.2743052499135956,
+      "time_total_sec": 0.6996484169503674,
+      "io_total": 7864
+    }
+  },
+  {
+    "buffer_size": 262144,
+    "sort": {
+      "buffer_size": 262144,
+      "buffer_pages": 64,
+      "fan_in": 63,
+      "input_pages": 4349,
+      "runs_generated": 68,
+      "merge_passes": 2,
+      "pages_read": 13047,
+      "pages_written": 13047,
+      "time_phase1_sec": 0.5678603340638801,
+      "time_phase2_sec": 1.0984062500065193,
+      "time_total_sec": 1.6662665840703994,
+      "io_total": 26094
+    },
+    "hash": {
+      "buffer_size": 262144,
+      "buffer_pages": 64,
+      "partitions_created": 63,
+      "groups": 6393,
+      "max_groups_in_partition": 126,
+      "partition_pages_min": 33,
+      "partition_pages_max": 51,
+      "pages_read": 5254,
+      "pages_written": 2642,
+      "time_phase1_sec": 0.4334047919837758,
+      "time_phase2_sec": 0.27545766707044095,
+      "time_total_sec": 0.7088624590542167,
+      "io_total": 7896
+    }
+  },
+  {
+    "buffer_size": 524288,
+    "sort": {
+      "buffer_size": 524288,
+      "buffer_pages": 128,
+      "fan_in": 127,
+      "input_pages": 4349,
+      "runs_generated": 34,
+      "merge_passes": 1,
+      "pages_read": 8698,
+      "pages_written": 8698,
+      "time_phase1_sec": 0.5577812920091674,
+      "time_phase2_sec": 0.5961654590209946,
+      "time_total_sec": 1.153946751030162,
+      "io_total": 17396
+    },
+    "hash": {
+      "buffer_size": 524288,
+      "buffer_pages": 128,
+      "partitions_created": 127,
+      "groups": 6393,
+      "max_groups_in_partition": 74,
+      "partition_pages_min": 14,
+      "partition_pages_max": 31,
+      "pages_read": 5290,
+      "pages_written": 2678,
+      "time_phase1_sec": 0.4520757080754265,
+      "time_phase2_sec": 0.28417849994730204,
+      "time_total_sec": 0.7362542080227286,
+      "io_total": 7968
+    }
+  },
+  {
+    "buffer_size": 1048576,
+    "sort": {
+      "buffer_size": 1048576,
+      "buffer_pages": 256,
+      "fan_in": 255,
+      "input_pages": 4349,
+      "runs_generated": 17,
+      "merge_passes": 1,
+      "pages_read": 8698,
+      "pages_written": 8698,
+      "time_phase1_sec": 0.5682133339578286,
+      "time_phase2_sec": 0.561848291894421,
+      "time_total_sec": 1.1300616258522496,
+      "io_total": 17396
+    },
+    "hash": {
+      "buffer_size": 1048576,
+      "buffer_pages": 256,
+      "partitions_created": 255,
+      "groups": 6393,
+      "max_groups_in_partition": 41,
+      "partition_pages_min": 5,
+      "partition_pages_max": 16,
+      "pages_read": 5351,
+      "pages_written": 2739,
+      "time_phase1_sec": 0.48895279108546674,
+      "time_phase2_sec": 0.2943886669818312,
+      "time_total_sec": 0.7833414580672979,
+      "io_total": 8090
+    }
+  }
+]

@@ -1,0 +1,391 @@
+{
+  "tamanos": [
+    {
+      "tamano": 1000,
+      "construccion": {
+        "secuencial": 0.0010099170031026006,
+        "avl": 0.08164925000164658
+      },
+      "altura_avl": 12,
+      "reconstrucciones": 15,
+      "busqueda": {
+        "secuencial": {
+          "total_seg": 0.012268458027392626,
+          "promedio_ms": 0.02453691605478525,
+          "accesos": 4467,
+          "accesos_promedio": 8.934
+        },
+        "avl": {
+          "total_seg": 0.008869583019986749,
+          "promedio_ms": 0.017739166039973497,
+          "accesos": 4591,
+          "accesos_promedio": 9.182
+        }
+      },
+      "registros_por_rango": 10.72,
+      "rango": {
+        "secuencial": {
+          "total_seg": 0.0051869170274585485,
+          "promedio_ms": 0.051869170274585485,
+          "accesos": 2170,
+          "accesos_promedio": 21.7
+        },
+        "avl": {
+          "total_seg": 0.004395624971948564,
+          "promedio_ms": 0.04395624971948564,
+          "accesos": 2006,
+          "accesos_promedio": 20.06
+        }
+      },
+      "insercion": {
+        "secuencial": {
+          "total_seg": 0.05193504202179611,
+          "promedio_ms": 0.10387008404359221,
+          "accesos": 38420,
+          "accesos_promedio": 76.84
+        },
+        "avl": {
+          "total_seg": 0.05056229198817164,
+          "promedio_ms": 0.10112458397634327,
+          "accesos": 23392,
+          "accesos_promedio": 46.784
+        }
+      },
+      "eliminacion": {
+        "secuencial": {
+          "total_seg": 0.022030082996934652,
+          "promedio_ms": 0.044060165993869305,
+          "accesos": 5321,
+          "accesos_promedio": 10.642
+        },
+        "avl": {
+          "total_seg": 0.045041457982733846,
+          "promedio_ms": 0.09008291596546769,
+          "accesos": 21351,
+          "accesos_promedio": 42.702
+        }
+      },
+      "validos_secuencial": 1000,
+      "validos_avl": 1000
+    },
+    {
+      "tamano": 2500,
+      "construccion": {
+        "secuencial": 0.0021927920170128345,
+        "avl": 0.23963237495627254
+      },
+      "altura_avl": 14,
+      "reconstrucciones": 15,
+      "busqueda": {
+        "secuencial": {
+          "total_seg": 0.01338050002232194,
+          "promedio_ms": 0.02676100004464388,
+          "accesos": 5200,
+          "accesos_promedio": 10.4
+        },
+        "avl": {
+          "total_seg": 0.010738916927948594,
+          "promedio_ms": 0.021477833855897188,
+          "accesos": 5297,
+          "accesos_promedio": 10.594
+        }
+      },
+      "registros_por_rango": 25.26,
+      "rango": {
+        "secuencial": {
+          "total_seg": 0.00694237498100847,
+          "promedio_ms": 0.0694237498100847,
+          "accesos": 3757,
+          "accesos_promedio": 37.57
+        },
+        "avl": {
+          "total_seg": 0.009311416069976985,
+          "promedio_ms": 0.09311416069976985,
+          "accesos": 3587,
+          "accesos_promedio": 35.87
+        }
+      },
+      "insercion": {
+        "secuencial": {
+          "total_seg": 0.08547699998598546,
+          "promedio_ms": 0.17095399997197092,
+          "accesos": 83420,
+          "accesos_promedio": 166.84
+        },
+        "avl": {
+          "total_seg": 0.05414570798166096,
+          "promedio_ms": 0.10829141596332192,
+          "accesos": 25522,
+          "accesos_promedio": 51.044
+        }
+      },
+      "eliminacion": {
+        "secuencial": {
+          "total_seg": 0.021052333060652018,
+          "promedio_ms": 0.042104666121304035,
+          "accesos": 5791,
+          "accesos_promedio": 11.582
+        },
+        "avl": {
+          "total_seg": 0.04839125007856637,
+          "promedio_ms": 0.09678250015713274,
+          "accesos": 23734,
+          "accesos_promedio": 47.468
+        }
+      },
+      "validos_secuencial": 2500,
+      "validos_avl": 2500
+    },
+    {
+      "tamano": 5000,
+      "construccion": {
+        "secuencial": 0.0039048749022185802,
+        "avl": 0.506906499969773
+      },
+      "altura_avl": 15,
+      "reconstrucciones": 15,
+      "busqueda": {
+        "secuencial": {
+          "total_seg": 0.01447695808019489,
+          "promedio_ms": 0.02895391616038978,
+          "accesos": 5733,
+          "accesos_promedio": 11.466
+        },
+        "avl": {
+          "total_seg": 0.011524291941896081,
+          "promedio_ms": 0.023048583883792162,
+          "accesos": 5730,
+          "accesos_promedio": 11.46
+        }
+      },
+      "registros_por_rango": 49.44,
+      "rango": {
+        "secuencial": {
+          "total_seg": 0.009452625061385334,
+          "promedio_ms": 0.09452625061385334,
+          "accesos": 6275,
+          "accesos_promedio": 62.75
+        },
+        "avl": {
+          "total_seg": 0.0138938749441877,
+          "promedio_ms": 0.138938749441877,
+          "accesos": 6078,
+          "accesos_promedio": 60.78
+        }
+      },
+      "insercion": {
+        "secuencial": {
+          "total_seg": 0.1510960409650579,
+          "promedio_ms": 0.3021920819301158,
+          "accesos": 158420,
+          "accesos_promedio": 316.84
+        },
+        "avl": {
+          "total_seg": 0.05679620790760964,
+          "promedio_ms": 0.11359241581521928,
+          "accesos": 27525,
+          "accesos_promedio": 55.05
+        }
+      },
+      "eliminacion": {
+        "secuencial": {
+          "total_seg": 0.022760124993510544,
+          "promedio_ms": 0.04552024998702109,
+          "accesos": 6248,
+          "accesos_promedio": 12.496
+        },
+        "avl": {
+          "total_seg": 0.052317166002467275,
+          "promedio_ms": 0.10463433200493455,
+          "accesos": 25656,
+          "accesos_promedio": 51.312
+        }
+      },
+      "validos_secuencial": 5000,
+      "validos_avl": 5000
+    },
+    {
+      "tamano": 10000,
+      "construccion": {
+        "secuencial": 0.007944375043734908,
+        "avl": 1.11982395790983
+      },
+      "altura_avl": 16,
+      "reconstrucciones": 15,
+      "busqueda": {
+        "secuencial": {
+          "total_seg": 0.015132832922972739,
+          "promedio_ms": 0.030265665845945477,
+          "accesos": 6217,
+          "accesos_promedio": 12.434
+        },
+        "avl": {
+          "total_seg": 0.012842707918025553,
+          "promedio_ms": 0.025685415836051106,
+          "accesos": 6343,
+          "accesos_promedio": 12.686
+        }
+      },
+      "registros_por_rango": 98.49,
+      "rango": {
+        "secuencial": {
+          "total_seg": 0.01489208301063627,
+          "promedio_ms": 0.1489208301063627,
+          "accesos": 11291,
+          "accesos_promedio": 112.91
+        },
+        "avl": {
+          "total_seg": 0.025718417018651962,
+          "promedio_ms": 0.2571841701865196,
+          "accesos": 11092,
+          "accesos_promedio": 110.92
+        }
+      },
+      "insercion": {
+        "secuencial": {
+          "total_seg": 0.27631995896808803,
+          "promedio_ms": 0.5526399179361761,
+          "accesos": 308420,
+          "accesos_promedio": 616.84
+        },
+        "avl": {
+          "total_seg": 0.06294983299449086,
+          "promedio_ms": 0.12589966598898172,
+          "accesos": 29604,
+          "accesos_promedio": 59.208
+        }
+      },
+      "eliminacion": {
+        "secuencial": {
+          "total_seg": 0.024738959036767483,
+          "promedio_ms": 0.049477918073534966,
+          "accesos": 6722,
+          "accesos_promedio": 13.444
+        },
+        "avl": {
+          "total_seg": 0.05894000001717359,
+          "promedio_ms": 0.11788000003434718,
+          "accesos": 27411,
+          "accesos_promedio": 54.822
+        }
+      },
+      "validos_secuencial": 10000,
+      "validos_avl": 10000
+    },
+    {
+      "tamano": 20000,
+      "construccion": {
+        "secuencial": 0.015698041999712586,
+        "avl": 2.458627250045538
+      },
+      "altura_avl": 17,
+      "reconstrucciones": 15,
+      "busqueda": {
+        "secuencial": {
+          "total_seg": 0.016627667006105185,
+          "promedio_ms": 0.03325533401221037,
+          "accesos": 6717,
+          "accesos_promedio": 13.434
+        },
+        "avl": {
+          "total_seg": 0.01494108303450048,
+          "promedio_ms": 0.02988216606900096,
+          "accesos": 6849,
+          "accesos_promedio": 13.698
+        }
+      },
+      "registros_por_rango": 197.06,
+      "rango": {
+        "secuencial": {
+          "total_seg": 0.028268166002817452,
+          "promedio_ms": 0.2826816600281745,
+          "accesos": 21232,
+          "accesos_promedio": 212.32
+        },
+        "avl": {
+          "total_seg": 0.05411345895845443,
+          "promedio_ms": 0.5411345895845443,
+          "accesos": 21012,
+          "accesos_promedio": 210.12
+        }
+      },
+      "insercion": {
+        "secuencial": {
+          "total_seg": 0.5374434590339661,
+          "promedio_ms": 1.0748869180679321,
+          "accesos": 608420,
+          "accesos_promedio": 1216.84
+        },
+        "avl": {
+          "total_seg": 0.06825358397327363,
+          "promedio_ms": 0.13650716794654727,
+          "accesos": 31428,
+          "accesos_promedio": 62.856
+        }
+      },
+      "eliminacion": {
+        "secuencial": {
+          "total_seg": 0.02531225001439452,
+          "promedio_ms": 0.05062450002878904,
+          "accesos": 7178,
+          "accesos_promedio": 14.356
+        },
+        "avl": {
+          "total_seg": 0.06447562505491078,
+          "promedio_ms": 0.12895125010982156,
+          "accesos": 29709,
+          "accesos_promedio": 59.418
+        }
+      },
+      "validos_secuencial": 20000,
+      "validos_avl": 20000
+    }
+  ],
+  "factor_k": [
+    {
+      "k": 8,
+      "reconstrucciones": 55,
+      "auxiliar": 8,
+      "insercion_total_seg": 1.0092136659659445,
+      "busqueda_promedio_ms": 0.03085374995134771,
+      "busqueda_accesos": 12.548,
+      "busqueda_auxiliar_accesos": 20.666666666666668
+    },
+    {
+      "k": 16,
+      "reconstrucciones": 29,
+      "auxiliar": 16,
+      "insercion_total_seg": 0.5199708750005811,
+      "busqueda_promedio_ms": 0.03041066601872444,
+      "busqueda_accesos": 12.588,
+      "busqueda_auxiliar_accesos": 25.666666666666668
+    },
+    {
+      "k": 32,
+      "reconstrucciones": 15,
+      "auxiliar": 32,
+      "insercion_total_seg": 0.2746633330825716,
+      "busqueda_promedio_ms": 0.030771915800869465,
+      "busqueda_accesos": 12.548,
+      "busqueda_auxiliar_accesos": 32.48148148148148
+    },
+    {
+      "k": 64,
+      "reconstrucciones": 7,
+      "auxiliar": 64,
+      "insercion_total_seg": 0.1357769169844687,
+      "busqueda_promedio_ms": 0.030823833774775267,
+      "busqueda_accesos": 12.458,
+      "busqueda_auxiliar_accesos": 68.63157894736842
+    },
+    {
+      "k": 128,
+      "reconstrucciones": 3,
+      "auxiliar": 128,
+      "insercion_total_seg": 0.06711020797956735,
+      "busqueda_promedio_ms": 0.030151918064802885,
+      "busqueda_accesos": 12.426,
+      "busqueda_auxiliar_accesos": 134.33333333333334
+    }
+  ]
+}

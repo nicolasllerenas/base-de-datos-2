@@ -1,0 +1,17 @@
+-- work_mem = 64MB
+-- SELECT * FROM employees.employee ORDER BY hire_date;
+
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=32775.50..33525.56 rows=300024 width=35) (actual time=31.464..42.485 rows=300024 loops=1)
+   Sort Key: hire_date
+   Sort Method: quicksort  Memory: 35729kB
+   Buffers: shared hit=2484
+   ->  Seq Scan on employee  (cost=0.00..5481.24 rows=300024 width=35) (actual time=0.002..7.259 rows=300024 loops=1)
+         Buffers: shared hit=2481
+ Planning:
+   Buffers: shared hit=87
+ Planning Time: 0.124 ms
+ Execution Time: 46.906 ms
+(10 rows)
+

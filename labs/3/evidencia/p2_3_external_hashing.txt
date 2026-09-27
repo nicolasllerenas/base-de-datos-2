@@ -1,0 +1,20 @@
+External hashing GROUP BY from_date sobre data/department_employee.bin
+  buffer_size             : 65536
+  buffer_pages            : 16
+  partitions_created      : 15
+  groups                  : 6393
+  max_groups_in_partition : 458
+  partition_pages_min     : 157
+  partition_pages_max     : 190
+  pages_read              : 5229
+  pages_written           : 2617
+  time_phase1_sec         : 0.4272
+  time_phase2_sec         : 0.2716
+  time_total_sec          : 0.6988
+  suma de conteos         : 331603
+  1985-01-01 -> 9
+  1985-01-14 -> 1
+  1985-02-01 -> 8
+  1985-02-02 -> 54
+  1985-02-03 -> 61
+  verificacion            : identico a PostgreSQL (6393 grupos)

@@ -1,0 +1,782 @@
+{
+  "extendible": [
+    {
+      "D": 2,
+      "traza": [
+        [
+          10,
+          "10",
+          "1",
+          "entra directo"
+        ],
+        [
+          13,
+          "01",
+          "0",
+          "entra directo"
+        ],
+        [
+          34,
+          "10",
+          "1",
+          "entra directo"
+        ],
+        [
+          6,
+          "10",
+          "1",
+          "entra directo"
+        ],
+        [
+          23,
+          "11",
+          "1",
+          "split en 10 / 11"
+        ],
+        [
+          23,
+          "11",
+          "11",
+          "entra directo"
+        ],
+        [
+          12,
+          "00",
+          "0",
+          "entra directo"
+        ],
+        [
+          15,
+          "11",
+          "11",
+          "entra directo"
+        ],
+        [
+          73,
+          "01",
+          "0",
+          "entra directo"
+        ],
+        [
+          28,
+          "00",
+          "0",
+          "split en 00 / 01"
+        ],
+        [
+          28,
+          "00",
+          "00",
+          "entra directo"
+        ],
+        [
+          19,
+          "11",
+          "11",
+          "entra directo"
+        ],
+        [
+          67,
+          "11",
+          "11",
+          "abre bucket de overflow"
+        ],
+        [
+          17,
+          "01",
+          "01",
+          "entra directo"
+        ],
+        [
+          41,
+          "01",
+          "01",
+          "abre bucket de overflow"
+        ],
+        [
+          87,
+          "11",
+          "11",
+          "va a la cadena"
+        ],
+        [
+          57,
+          "01",
+          "01",
+          "va a la cadena"
+        ],
+        [
+          27,
+          "11",
+          "11",
+          "va a la cadena"
+        ],
+        [
+          11,
+          "11",
+          "11",
+          "cadena llena: rehashing a D=3"
+        ]
+      ],
+      "directorio": {
+        "10": 2,
+        "11": 3,
+        "00": 4,
+        "01": 5
+      },
+      "buckets": {
+        "0": [
+          [
+            13,
+            12,
+            73
+          ],
+          null
+        ],
+        "1": [
+          [
+            10,
+            34,
+            6
+          ],
+          null
+        ],
+        "2": [
+          [
+            10,
+            34,
+            6
+          ],
+          null
+        ],
+        "3": [
+          [
+            23,
+            15,
+            19
+          ],
+          [
+            67,
+            87,
+            27
+          ]
+        ],
+        "4": [
+          [
+            12,
+            28
+          ],
+          null
+        ],
+        "5": [
+          [
+            13,
+            73,
+            17
+          ],
+          [
+            41,
+            57
+          ]
+        ]
+      }
+    },
+    {
+      "D": 3,
+      "traza": [
+        [
+          10,
+          "010",
+          "0",
+          "entra directo"
+        ],
+        [
+          13,
+          "101",
+          "1",
+          "entra directo"
+        ],
+        [
+          34,
+          "010",
+          "0",
+          "entra directo"
+        ],
+        [
+          6,
+          "110",
+          "1",
+          "entra directo"
+        ],
+        [
+          23,
+          "111",
+          "1",
+          "entra directo"
+        ],
+        [
+          12,
+          "100",
+          "1",
+          "split en 10 / 11"
+        ],
+        [
+          12,
+          "100",
+          "10",
+          "entra directo"
+        ],
+        [
+          15,
+          "111",
+          "11",
+          "entra directo"
+        ],
+        [
+          73,
+          "001",
+          "0",
+          "entra directo"
+        ],
+        [
+          28,
+          "100",
+          "10",
+          "entra directo"
+        ],
+        [
+          19,
+          "011",
+          "0",
+          "split en 00 / 01"
+        ],
+        [
+          19,
+          "011",
+          "01",
+          "entra directo"
+        ],
+        [
+          67,
+          "011",
+          "01",
+          "split en 010 / 011"
+        ],
+        [
+          67,
+          "011",
+          "011",
+          "entra directo"
+        ],
+        [
+          17,
+          "001",
+          "00",
+          "entra directo"
+        ],
+        [
+          41,
+          "001",
+          "00",
+          "entra directo"
+        ],
+        [
+          87,
+          "111",
+          "11",
+          "split en 110 / 111"
+        ],
+        [
+          87,
+          "111",
+          "111",
+          "entra directo"
+        ],
+        [
+          57,
+          "001",
+          "00",
+          "split en 000 / 001"
+        ],
+        [
+          57,
+          "001",
+          "001",
+          "abre bucket de overflow"
+        ],
+        [
+          27,
+          "011",
+          "011",
+          "entra directo"
+        ],
+        [
+          11,
+          "011",
+          "011",
+          "abre bucket de overflow"
+        ]
+      ],
+      "directorio": {
+        "10": 2,
+        "010": 6,
+        "011": 7,
+        "110": 8,
+        "111": 9,
+        "000": 10,
+        "001": 11
+      },
+      "buckets": {
+        "0": [
+          [
+            10,
+            34,
+            73
+          ],
+          null
+        ],
+        "1": [
+          [
+            13,
+            6,
+            23
+          ],
+          null
+        ],
+        "2": [
+          [
+            13,
+            12,
+            28
+          ],
+          null
+        ],
+        "3": [
+          [
+            6,
+            23,
+            15
+          ],
+          null
+        ],
+        "4": [
+          [
+            73,
+            17,
+            41
+          ],
+          null
+        ],
+        "5": [
+          [
+            10,
+            34,
+            19
+          ],
+          null
+        ],
+        "6": [
+          [
+            10,
+            34
+          ],
+          null
+        ],
+        "7": [
+          [
+            19,
+            67,
+            27
+          ],
+          [
+            11
+          ]
+        ],
+        "8": [
+          [
+            6
+          ],
+          null
+        ],
+        "9": [
+          [
+            23,
+            15,
+            87
+          ],
+          null
+        ],
+        "10": [
+          [],
+          null
+        ],
+        "11": [
+          [
+            73,
+            17,
+            41
+          ],
+          [
+            57
+          ]
+        ]
+      }
+    }
+  ],
+  "lineal": {
+    "traza": [
+      [
+        10,
+        0,
+        0,
+        0,
+        "entra directo"
+      ],
+      [
+        13,
+        1,
+        0,
+        0,
+        "entra directo"
+      ],
+      [
+        34,
+        0,
+        0,
+        0,
+        "entra directo"
+      ],
+      [
+        6,
+        0,
+        0,
+        0,
+        "entra directo"
+      ],
+      [
+        23,
+        1,
+        0,
+        0,
+        "entra directo"
+      ],
+      [
+        12,
+        0,
+        0,
+        1,
+        "overflow en B0, split de B0 en B2"
+      ],
+      [
+        15,
+        1,
+        0,
+        1,
+        "entra directo"
+      ],
+      [
+        73,
+        1,
+        1,
+        0,
+        "overflow en B1, split de B1 en B3, sube a nivel 1"
+      ],
+      [
+        28,
+        0,
+        1,
+        0,
+        "entra directo"
+      ],
+      [
+        19,
+        3,
+        1,
+        0,
+        "entra directo"
+      ],
+      [
+        67,
+        3,
+        1,
+        1,
+        "overflow en B3, split de B0 en B4"
+      ],
+      [
+        17,
+        1,
+        1,
+        1,
+        "entra directo"
+      ],
+      [
+        41,
+        1,
+        1,
+        2,
+        "overflow en B1, split de B1 en B5"
+      ],
+      [
+        87,
+        3,
+        1,
+        3,
+        "overflow en B3, split de B2 en B6"
+      ],
+      [
+        57,
+        1,
+        2,
+        0,
+        "overflow en B1, split de B3 en B7, sube a nivel 2"
+      ],
+      [
+        27,
+        3,
+        2,
+        0,
+        "entra directo"
+      ],
+      [
+        11,
+        3,
+        2,
+        1,
+        "overflow en B3, split de B0 en B8"
+      ]
+    ],
+    "buckets": {
+      "0": [
+        [],
+        []
+      ],
+      "1": [
+        [
+          73,
+          17,
+          41
+        ],
+        [
+          57
+        ]
+      ],
+      "2": [
+        [
+          10,
+          34
+        ],
+        []
+      ],
+      "3": [
+        [
+          19,
+          67,
+          27
+        ],
+        [
+          11
+        ]
+      ],
+      "4": [
+        [
+          12,
+          28
+        ],
+        []
+      ],
+      "5": [
+        [
+          13
+        ],
+        []
+      ],
+      "6": [
+        [
+          6
+        ],
+        []
+      ],
+      "7": [
+        [
+          23,
+          15,
+          87
+        ],
+        []
+      ],
+      "8": [
+        [],
+        []
+      ]
+    },
+    "nivel": 2,
+    "puntero": 1
+  },
+  "p1_carga": [
+    {
+      "registros": 200,
+      "buckets_primarios": 101,
+      "factor_bloque": 8,
+      "capacidad_primaria": 808,
+      "factor_carga": 0.24752475247524752,
+      "cadena_promedio": 1.0,
+      "cadena_maxima": 1,
+      "con_overflow": 0,
+      "bloques": 101,
+      "bytes": 71928,
+      "lecturas_busqueda": 1.0,
+      "lecturas_fallida": 1.0
+    },
+    {
+      "registros": 400,
+      "buckets_primarios": 101,
+      "factor_bloque": 8,
+      "capacidad_primaria": 808,
+      "factor_carga": 0.49504950495049505,
+      "cadena_promedio": 1.0,
+      "cadena_maxima": 1,
+      "con_overflow": 0,
+      "bloques": 101,
+      "bytes": 71928,
+      "lecturas_busqueda": 1.0,
+      "lecturas_fallida": 1.0
+    },
+    {
+      "registros": 800,
+      "buckets_primarios": 101,
+      "factor_bloque": 8,
+      "capacidad_primaria": 808,
+      "factor_carga": 0.9900990099009901,
+      "cadena_promedio": 1.3663366336633664,
+      "cadena_maxima": 2,
+      "con_overflow": 37,
+      "bloques": 138,
+      "bytes": 98272,
+      "lecturas_busqueda": 1.055,
+      "lecturas_fallida": 1.39
+    },
+    {
+      "registros": 1200,
+      "buckets_primarios": 101,
+      "factor_bloque": 8,
+      "capacidad_primaria": 808,
+      "factor_carga": 1.4851485148514851,
+      "cadena_promedio": 1.9702970297029703,
+      "cadena_maxima": 2,
+      "con_overflow": 98,
+      "bloques": 199,
+      "bytes": 141704,
+      "lecturas_busqueda": 1.275,
+      "lecturas_fallida": 1.98
+    },
+    {
+      "registros": 1600,
+      "buckets_primarios": 101,
+      "factor_bloque": 8,
+      "capacidad_primaria": 808,
+      "factor_carga": 1.9801980198019802,
+      "cadena_promedio": 2.386138613861386,
+      "cadena_maxima": 3,
+      "con_overflow": 101,
+      "bloques": 241,
+      "bytes": 171608,
+      "lecturas_busqueda": 1.49,
+      "lecturas_fallida": 2.42
+    },
+    {
+      "registros": 2000,
+      "buckets_primarios": 101,
+      "factor_bloque": 8,
+      "capacidad_primaria": 808,
+      "factor_carga": 2.4752475247524752,
+      "cadena_promedio": 2.9306930693069306,
+      "cadena_maxima": 3,
+      "con_overflow": 101,
+      "bloques": 296,
+      "bytes": 210768,
+      "lecturas_busqueda": 1.84,
+      "lecturas_fallida": 2.94
+    },
+    {
+      "registros": 2400,
+      "buckets_primarios": 101,
+      "factor_bloque": 8,
+      "capacidad_primaria": 808,
+      "factor_carga": 2.9702970297029703,
+      "cadena_promedio": 3.366336633663366,
+      "cadena_maxima": 4,
+      "con_overflow": 101,
+      "bloques": 340,
+      "bytes": 242096,
+      "lecturas_busqueda": 2.09,
+      "lecturas_fallida": 3.39
+    }
+  ],
+  "p1_buckets": [
+    {
+      "registros": 2000,
+      "buckets_primarios": 53,
+      "factor_bloque": 8,
+      "capacidad_primaria": 424,
+      "factor_carga": 4.716981132075472,
+      "cadena_promedio": 5.132075471698113,
+      "cadena_maxima": 6,
+      "con_overflow": 53,
+      "bloques": 272,
+      "bytes": 193680,
+      "lecturas_busqueda": 2.875
+    },
+    {
+      "registros": 2000,
+      "buckets_primarios": 101,
+      "factor_bloque": 8,
+      "capacidad_primaria": 808,
+      "factor_carga": 2.4752475247524752,
+      "cadena_promedio": 2.9306930693069306,
+      "cadena_maxima": 3,
+      "con_overflow": 101,
+      "bloques": 296,
+      "bytes": 210768,
+      "lecturas_busqueda": 1.83
+    },
+    {
+      "registros": 2000,
+      "buckets_primarios": 211,
+      "factor_bloque": 8,
+      "capacidad_primaria": 1688,
+      "factor_carga": 1.1848341232227488,
+      "cadena_promedio": 1.7867298578199051,
+      "cadena_maxima": 2,
+      "con_overflow": 166,
+      "bloques": 377,
+      "bytes": 268440,
+      "lecturas_busqueda": 1.18
+    },
+    {
+      "registros": 2000,
+      "buckets_primarios": 401,
+      "factor_bloque": 8,
+      "capacidad_primaria": 3208,
+      "factor_carga": 0.6234413965087282,
+      "cadena_promedio": 1.0,
+      "cadena_maxima": 1,
+      "con_overflow": 0,
+      "bloques": 401,
+      "bytes": 285528,
+      "lecturas_busqueda": 1.0
+    },
+    {
+      "registros": 2000,
+      "buckets_primarios": 809,
+      "factor_bloque": 8,
+      "capacidad_primaria": 6472,
+      "factor_carga": 0.30902348578491967,
+      "cadena_promedio": 1.0,
+      "cadena_maxima": 1,
+      "con_overflow": 0,
+      "bloques": 809,
+      "bytes": 576024,
+      "lecturas_busqueda": 1.0
+    }
+  ]
+}

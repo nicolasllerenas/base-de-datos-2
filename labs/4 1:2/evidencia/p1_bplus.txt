@@ -1,0 +1,21 @@
+B+ Tree File sobre data/employee.csv
+  orden M            : 64 (hasta 63 claves por nodo)
+  tamano de bloque   : 5556 bytes = 12 de cabecera + 63 x 88
+  registros          : 5000
+  altura             : 3
+  bloques usados     : 161 (894540 bytes)
+  search(13092) -> Kersti Bergere, Marketing [3 lecturas]
+  search(1) -> None
+  insert(999999) -> 3 lecturas, 1 escrituras, altura=3
+  search(999999) -> Nicolas Llerena
+  rangeSearch(10013, 10513) -> 402 registros [15 lecturas]
+      10013  Eberhardt Terkki       Human Resources
+      10014  Berni Genin            Development
+      10016  Kazuhito Cappelletti   Sales
+  remove(13092) -> True [11 lecturas, 5 escrituras]
+  search(13092) tras eliminar -> None
+  validacion         : 5000 registros, altura 3, 155 hojas, ocupacion 51%
+  prueba de estres de la eliminacion (invariantes tras cada tanda):
+      M=  4: 3000 altas y 2500 bajas -> quedan 500 registros, altura 7, 222 hojas, invariantes correctas
+      M=  8: 3000 altas y 2500 bajas -> quedan 500 registros, altura 4, 102 hojas, invariantes correctas
+      M= 64: 3000 altas y 2500 bajas -> quedan 500 registros, altura 2, 13 hojas, invariantes correctas

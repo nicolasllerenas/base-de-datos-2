@@ -1,0 +1,22 @@
+dataset: 100000 registros, registro de 88 bytes
+
+--- escalamiento con M = 64 ---
+n=  1000  altura=2  hojas=   23  ocupacion=69%  construccion=  0.09s (    3013 I/O)  busqueda=2.0 lecturas  rango=2.2 lecturas
+n= 10000  altura=3  hojas=  222  ocupacion=72%  construccion=  0.71s (   37849 I/O)  busqueda=3.0 lecturas  rango=3.9 lecturas
+n= 50000  altura=3  hojas= 1135  ocupacion=70%  construccion=  3.64s (  201545 I/O)  busqueda=3.0 lecturas  rango=7.7 lecturas
+n=100000  altura=3  hojas= 2296  ocupacion=69%  construccion=  7.60s (  406245 I/O)  busqueda=3.0 lecturas  rango=12.1 lecturas
+
+--- impacto del orden M ---
+M=   4  bloque=   276B  altura=10  hojas= 8546  archivo= 3.57MB  busqueda= 10.0 lecturas  rango=  45.1 lecturas
+M=   8  bloque=   628B  altura=6  hojas= 3940  archivo= 2.99MB  busqueda=  6.0 lecturas  rango=  22.0 lecturas
+M=  16  bloque=  1332B  altura=4  hojas= 1897  archivo= 2.77MB  busqueda=  4.0 lecturas  rango=  11.8 lecturas
+M=  32  bloque=  2740B  altura=4  hojas=  925  archivo= 2.65MB  busqueda=  4.0 lecturas  rango=   7.8 lecturas
+M=  64  bloque=  5556B  altura=3  hojas=  454  archivo= 2.57MB  busqueda=  3.0 lecturas  rango=   4.8 lecturas
+M= 128  bloque= 11188B  altura=3  hojas=  227  archivo= 2.57MB  busqueda=  3.0 lecturas  rango=   4.0 lecturas
+M= 256  bloque= 22452B  altura=2  hojas=  120  archivo= 2.72MB  busqueda=  2.0 lecturas  rango=   2.5 lecturas
+
+--- busqueda por rango: B+ vs escaneo secuencial vs AVL ---
+rango de 500 claves (80 registros) sobre 20000: B+ 0.115 ms / 4.8 lecturas | secuencial 14.902 ms / 318.0 | AVL 0.197 ms / 93.4
+
+resultados en resultados/
+

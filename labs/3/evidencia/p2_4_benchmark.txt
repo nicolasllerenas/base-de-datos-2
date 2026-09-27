@@ -1,0 +1,7 @@
+  64 KB  B=  16  runs= 272 passes=3 sort=  2.21s io= 34792  |  particiones=  15 hash=  0.68s io=  7846
+ 128 KB  B=  32  runs= 136 passes=2 sort=  1.67s io= 26094  |  particiones=  31 hash=  0.70s io=  7864
+ 256 KB  B=  64  runs=  68 passes=2 sort=  1.67s io= 26094  |  particiones=  63 hash=  0.71s io=  7896
+ 512 KB  B= 128  runs=  34 passes=1 sort=  1.15s io= 17396  |  particiones= 127 hash=  0.74s io=  7968
+1024 KB  B= 256  runs=  17 passes=1 sort=  1.13s io= 17396  |  particiones= 255 hash=  0.78s io=  8090
+
+resultados en resultados/

@@ -1,0 +1,17 @@
+Static Hash File sobre data/employee.csv
+  buckets primarios  : 101 (h(k) = k mod 101)
+  factor de bloque   : 8 registros por bucket
+  tamano de bloque   : 712 bytes = 8 de cabecera + 8 x 88
+  registros          : 1200  (factor de carga 1.49)
+  cadenas            : promedio 1.97 bloques, maxima 2, 98 buckets con overflow
+  search(10748) -> Yuchang Francisci, Human Resources [1 lecturas, bucket 42]
+  search(1) -> None [2 lecturas]
+  insert(999999) -> bucket 99, cadena [99, 164] [4L 1E]
+  bucket 99 antes  : cadena de 2 bloques [99, 164]
+  tras 8 bajas   : cadena de 1 bloques [99], lista de libres = 164
+  el bloque liberado se reutiliza en la siguiente alta: bloque 164
+  registros validos  : 1193 (sin duplicados: 1193)
+  prueba de estres de la eliminacion:
+      M=  7 FB=3: 2000 altas y 1800 bajas -> quedan 200 registros, cadena maxima 12, 600 bloques reciclables
+      M= 23 FB=4: 2000 altas y 1800 bajas -> quedan 200 registros, cadena maxima 4, 454 bloques reciclables
+      M=101 FB=8: 2000 altas y 1800 bajas -> quedan 200 registros, cadena maxima 1, 195 bloques reciclables

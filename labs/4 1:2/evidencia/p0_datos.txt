@@ -1,0 +1,5 @@
+data/employee.csv: 100000 registros, 5780165 bytes
+  Employee_ID,Employee_Name,Country,Department,Salary,Joining_Date
+  10001,Georgi Facello,Brasil,Development,95000,26/06/1986
+  10002,Bezalel Simmel,Espana,Sales,88000,21/11/1985
+  10003,Parto Bamford,Uruguay,Production,43311,28/08/1986

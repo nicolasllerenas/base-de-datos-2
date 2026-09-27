@@ -1,0 +1,26 @@
+-- work_mem = 2MB
+-- SELECT from_date, COUNT(*) FROM employees.department_employee GROUP BY from_date;
+
+                                                                     QUERY PLAN                                                                      
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize HashAggregate  (cost=6738.00..6798.79 rows=6079 width=12) (actual time=19.063..19.299 rows=6393 loops=1)
+   Group Key: from_date
+   Batches: 1  Memory Usage: 721kB
+   Buffers: shared hit=2113
+   ->  Gather  (cost=6038.91..6707.60 rows=6079 width=12) (actual time=17.095..18.163 rows=12766 loops=1)
+         Workers Planned: 1
+         Workers Launched: 1
+         Buffers: shared hit=2113
+         ->  Partial HashAggregate  (cost=5038.91..5099.70 rows=6079 width=12) (actual time=16.193..16.416 rows=6383 loops=2)
+               Group Key: from_date
+               Batches: 1  Memory Usage: 721kB
+               Buffers: shared hit=2113
+               Worker 0:  Batches: 1  Memory Usage: 721kB
+               ->  Parallel Seq Scan on department_employee  (cost=0.00..4063.61 rows=195061 width=4) (actual time=0.002..4.486 rows=165802 loops=2)
+                     Buffers: shared hit=2113
+ Planning:
+   Buffers: shared hit=131
+ Planning Time: 0.228 ms
+ Execution Time: 19.479 ms
+(19 rows)
+

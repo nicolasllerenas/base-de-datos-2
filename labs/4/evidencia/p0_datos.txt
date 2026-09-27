@@ -1,0 +1,5 @@
+data/employee.csv: 20500 registros, 1508753 bytes
+  Employee_ID,Employee_Name,Age,Country,Department,Position,Salary,Joining_Date
+  10001,Georgi Facello,73,Brasil,Development,Senior Engineer,95000,26/06/1986
+  10002,Bezalel Simmel,62,Espana,Sales,Staff,88000,21/11/1985
+  10003,Parto Bamford,66,Uruguay,Production,Senior Engineer,43311,28/08/1986

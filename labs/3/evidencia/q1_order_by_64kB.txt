@@ -1,0 +1,22 @@
+-- work_mem = 64kB
+-- SELECT * FROM employees.employee ORDER BY hire_date;
+
+                                                             QUERY PLAN                                                              
+-------------------------------------------------------------------------------------------------------------------------------------
+ Gather Merge  (cost=35105.31..55401.08 rows=176485 width=35) (actual time=82.639..109.241 rows=300024 loops=1)
+   Workers Planned: 1
+   Workers Launched: 1
+   Buffers: shared hit=2519, temp read=6937 written=7519
+   ->  Sort  (cost=34105.30..34546.51 rows=176485 width=35) (actual time=78.487..86.491 rows=150012 loops=2)
+         Sort Key: hire_date
+         Sort Method: external merge  Disk: 7192kB
+         Buffers: shared hit=2519, temp read=6937 written=7519
+         Worker 0:  Sort Method: external merge  Disk: 6632kB
+         ->  Parallel Seq Scan on employee  (cost=0.00..4245.85 rows=176485 width=35) (actual time=0.005..9.191 rows=150012 loops=2)
+               Buffers: shared hit=2481
+ Planning:
+   Buffers: shared hit=87
+ Planning Time: 0.473 ms
+ Execution Time: 115.718 ms
+(15 rows)
+

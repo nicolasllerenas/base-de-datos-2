@@ -1,0 +1,26 @@
+employee
+  heap_path       : data/employee.bin
+  page_size       : 4096
+  record_format   : <q10s14s16s1s10s
+  record_size     : 59
+  fields          : ['id', 'birth_date', 'first_name', 'last_name', 'gender', 'hire_date']
+  records_per_page: 69
+  records         : 300024
+  pages           : 4349
+  bytes           : 17817600
+  primer registro : (10001, '1953-09-02', 'Georgi', 'Facello', 'M', '1986-06-26')
+  ultimo registro : (499999, '1958-05-01', 'Sachin', 'Tsukuda', 'M', '1997-11-30')
+  paginas         : 4349
+department_employee
+  heap_path       : data/department_employee.bin
+  page_size       : 4096
+  record_format   : <q4s10s10s
+  record_size     : 32
+  fields          : ['employee_id', 'department_id', 'from_date', 'to_date']
+  records_per_page: 127
+  records         : 331603
+  pages           : 2612
+  bytes           : 10702848
+  primer registro : (10001, 'd005', '1986-06-26', '9999-01-01')
+  ultimo registro : (499999, 'd004', '1997-11-30', '9999-01-01')
+  paginas         : 2612

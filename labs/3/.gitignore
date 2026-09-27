@@ -1,0 +1,5 @@
+.venv/
+data/runs/
+data/particiones/
+data/employee_sorted.bin
+__pycache__/

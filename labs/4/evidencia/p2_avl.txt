@@ -1,0 +1,14 @@
+AVL File sobre data/employee.csv
+  tamano de nodo     : 124 bytes (112 de datos + 12 de enlaces)
+  nodos en el arbol  : 2000
+  altura del arbol   : 11 (log2(2000) = 10)
+  search(11247) -> Ranga Rebaine, Human Resources [11 accesos]
+  insert(999999) -> altura=11, nodos=2001 [50 accesos]
+  search(999999) -> Nicolas Llerena
+  remove(11247) -> True [41 accesos], altura=11, nodos=2000
+  search(11247) tras eliminar -> None
+  rangeSearch(10013, 10513) -> 402 empleados [408 accesos]
+      10013  Eberhardt Terkki       Human Resources
+      10014  Berni Genin            Development
+      10016  Kazuhito Cappelletti   Sales
+  recorrido inorden  : 2000 registros, ordenado=True

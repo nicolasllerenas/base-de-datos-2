@@ -1,0 +1,276 @@
+{
+  "tamanos": [
+    {
+      "tamano": 1000,
+      "altura": 2,
+      "hojas": 23,
+      "ocupacion_hojas": 0.6901311249137336,
+      "bloques": 24,
+      "bytes": 133368,
+      "construccion": {
+        "total_seg": 0.09248299989849329,
+        "lecturas": 1952,
+        "escrituras": 1061
+      },
+      "busqueda": {
+        "total_seg": 0.020431124954484403,
+        "promedio_ms": 0.040862249908968806,
+        "lecturas": 1000,
+        "escrituras": 0,
+        "lecturas_promedio": 2.0,
+        "escrituras_promedio": 0.0
+      },
+      "rango": {
+        "total_seg": 0.004342333064414561,
+        "promedio_ms": 0.04342333064414561,
+        "lecturas": 216,
+        "escrituras": 0,
+        "lecturas_promedio": 2.16,
+        "escrituras_promedio": 0.0
+      },
+      "eliminacion": {
+        "total_seg": 0.0639037910150364,
+        "promedio_ms": 0.1278075820300728,
+        "lecturas": 2210,
+        "escrituras": 915,
+        "lecturas_promedio": 4.42,
+        "escrituras_promedio": 1.83
+      }
+    },
+    {
+      "tamano": 10000,
+      "altura": 3,
+      "hojas": 222,
+      "ocupacion_hojas": 0.715000715000715,
+      "bloques": 227,
+      "bytes": 1261236,
+      "construccion": {
+        "total_seg": 0.7133413329720497,
+        "lecturas": 27188,
+        "escrituras": 10661
+      },
+      "busqueda": {
+        "total_seg": 0.022238624980673194,
+        "promedio_ms": 0.04447724996134639,
+        "lecturas": 1500,
+        "escrituras": 0,
+        "lecturas_promedio": 3.0,
+        "escrituras_promedio": 0.0
+      },
+      "rango": {
+        "total_seg": 0.008622832945547998,
+        "promedio_ms": 0.08622832945547998,
+        "lecturas": 394,
+        "escrituras": 0,
+        "lecturas_promedio": 3.94,
+        "escrituras_promedio": 0.0
+      },
+      "eliminacion": {
+        "total_seg": 0.057573792058974504,
+        "promedio_ms": 0.11514758411794901,
+        "lecturas": 3048,
+        "escrituras": 590,
+        "lecturas_promedio": 6.096,
+        "escrituras_promedio": 1.18
+      }
+    },
+    {
+      "tamano": 50000,
+      "altura": 3,
+      "hojas": 1135,
+      "ocupacion_hojas": 0.6992518005733864,
+      "bloques": 1165,
+      "bytes": 6472764,
+      "construccion": {
+        "total_seg": 3.6430934169329703,
+        "lecturas": 148098,
+        "escrituras": 53447
+      },
+      "busqueda": {
+        "total_seg": 0.021612083073705435,
+        "promedio_ms": 0.04322416614741087,
+        "lecturas": 1500,
+        "escrituras": 0,
+        "lecturas_promedio": 3.0,
+        "escrituras_promedio": 0.0
+      },
+      "rango": {
+        "total_seg": 0.021534542087465525,
+        "promedio_ms": 0.21534542087465525,
+        "lecturas": 773,
+        "escrituras": 0,
+        "lecturas_promedio": 7.73,
+        "escrituras_promedio": 0.0
+      },
+      "eliminacion": {
+        "total_seg": 0.060412292019464076,
+        "promedio_ms": 0.12082458403892815,
+        "lecturas": 3025,
+        "escrituras": 555,
+        "lecturas_promedio": 6.05,
+        "escrituras_promedio": 1.11
+      }
+    },
+    {
+      "tamano": 100000,
+      "altura": 3,
+      "hojas": 2296,
+      "ocupacion_hojas": 0.6913334439466844,
+      "bloques": 2354,
+      "bytes": 13078848,
+      "construccion": {
+        "total_seg": 7.604510499979369,
+        "lecturas": 299259,
+        "escrituras": 106986
+      },
+      "busqueda": {
+        "total_seg": 0.020775375072844326,
+        "promedio_ms": 0.04155075014568865,
+        "lecturas": 1500,
+        "escrituras": 0,
+        "lecturas_promedio": 3.0,
+        "escrituras_promedio": 0.0
+      },
+      "rango": {
+        "total_seg": 0.035968041978776455,
+        "promedio_ms": 0.35968041978776455,
+        "lecturas": 1207,
+        "escrituras": 0,
+        "lecturas_promedio": 12.07,
+        "escrituras_promedio": 0.0
+      },
+      "eliminacion": {
+        "total_seg": 0.05403995898086578,
+        "promedio_ms": 0.10807991796173155,
+        "lecturas": 3043,
+        "escrituras": 596,
+        "lecturas_promedio": 6.086,
+        "escrituras_promedio": 1.192
+      }
+    }
+  ],
+  "ordenes": [
+    {
+      "orden": 4,
+      "bloque": 276,
+      "altura": 10,
+      "hojas": 8546,
+      "ocupacion_hojas": 0.7800920508620017,
+      "bytes": 3572568,
+      "construccion_seg": 0.5419304170645773,
+      "construccion_io": 4508,
+      "busqueda_lecturas": 10.0,
+      "busqueda_ms": 0.019917333964258432,
+      "rango_lecturas": 45.08,
+      "rango_ms": 0.13523417059332132
+    },
+    {
+      "orden": 8,
+      "bloque": 628,
+      "altura": 6,
+      "hojas": 3940,
+      "ocupacion_hojas": 0.7251631617113851,
+      "bytes": 2989932,
+      "construccion_seg": 1.0256400420330465,
+      "construccion_io": 2202,
+      "busqueda_lecturas": 6.0,
+      "busqueda_ms": 0.021266750060021877,
+      "rango_lecturas": 22.02,
+      "rango_ms": 0.13488958938978612
+    },
+    {
+      "orden": 16,
+      "bloque": 1332,
+      "altura": 4,
+      "hojas": 1897,
+      "ocupacion_hojas": 0.7028641714988578,
+      "bytes": 2771916,
+      "construccion_seg": 0.7321862089447677,
+      "construccion_io": 1182,
+      "busqueda_lecturas": 4.0,
+      "busqueda_ms": 0.021232416154816747,
+      "rango_lecturas": 11.82,
+      "rango_ms": 0.1115725003182888
+    },
+    {
+      "orden": 32,
+      "bloque": 2740,
+      "altura": 4,
+      "hojas": 925,
+      "ocupacion_hojas": 0.6974716652136007,
+      "bytes": 2649604,
+      "construccion_seg": 0.9039232500363141,
+      "construccion_io": 775,
+      "busqueda_lecturas": 4.0,
+      "busqueda_ms": 0.028598831966519356,
+      "rango_lecturas": 7.75,
+      "rango_ms": 0.10428832960315049
+    },
+    {
+      "orden": 64,
+      "bloque": 5556,
+      "altura": 3,
+      "hojas": 454,
+      "ocupacion_hojas": 0.6992518005733864,
+      "bytes": 2572452,
+      "construccion_seg": 1.3216272500576451,
+      "construccion_io": 485,
+      "busqueda_lecturas": 3.0,
+      "busqueda_ms": 0.04084291588515043,
+      "rango_lecturas": 4.85,
+      "rango_ms": 0.10798624949529767
+    },
+    {
+      "orden": 128,
+      "bloque": 11188,
+      "altura": 3,
+      "hojas": 227,
+      "ocupacion_hojas": 0.6937458808838323,
+      "bytes": 2573264,
+      "construccion_seg": 2.3141392919933423,
+      "construccion_io": 403,
+      "busqueda_lecturas": 3.0,
+      "busqueda_ms": 0.07228858396410942,
+      "rango_lecturas": 4.03,
+      "rango_ms": 0.14173791045323014
+    },
+    {
+      "orden": 256,
+      "bloque": 22452,
+      "altura": 2,
+      "hojas": 120,
+      "ocupacion_hojas": 0.6535947712418301,
+      "bytes": 2716716,
+      "construccion_seg": 5.33644233411178,
+      "construccion_io": 248,
+      "busqueda_lecturas": 2.0,
+      "busqueda_ms": 0.1335106680635363,
+      "rango_lecturas": 2.48,
+      "rango_ms": 0.1870633300859481
+    }
+  ],
+  "rango": {
+    "registros_por_rango": 80.26,
+    "bplus": {
+      "total_seg": 0.011540999985300004,
+      "promedio_ms": 0.11540999985300004,
+      "lecturas": 481,
+      "escrituras": 0,
+      "lecturas_promedio": 4.81,
+      "escrituras_promedio": 0.0
+    },
+    "secuencial": {
+      "total_seg": 1.4902483749901876,
+      "promedio_ms": 14.902483749901876,
+      "lecturas": 31800,
+      "escrituras": 0,
+      "lecturas_promedio": 318.0,
+      "escrituras_promedio": 0.0
+    },
+    "avl": {
+      "total_seg": 0.019717832910828292,
+      "promedio_ms": 0.19717832910828292,
+      "lecturas_promedio": 93.36
+    }
+  }
+}

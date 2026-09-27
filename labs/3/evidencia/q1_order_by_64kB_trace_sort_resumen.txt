@@ -1,0 +1,4 @@
+runs generados : 586
+merge steps    : 118
+LOG:  worker -1 switching to external sort with 7 tapes: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+LOG:  worker -1 using 56 KB of memory for read buffers among 6 input tapes

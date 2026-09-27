@@ -1,0 +1,12 @@
+n=  1000  altura_avl=12  reconstrucciones= 15  busqueda seq=0.025 ms / avl=0.018 ms  |  insercion seq=  0.05 s / avl=0.05 s
+n=  2500  altura_avl=14  reconstrucciones= 15  busqueda seq=0.027 ms / avl=0.021 ms  |  insercion seq=  0.09 s / avl=0.05 s
+n=  5000  altura_avl=15  reconstrucciones= 15  busqueda seq=0.029 ms / avl=0.023 ms  |  insercion seq=  0.15 s / avl=0.06 s
+n= 10000  altura_avl=16  reconstrucciones= 15  busqueda seq=0.030 ms / avl=0.026 ms  |  insercion seq=  0.28 s / avl=0.06 s
+n= 20000  altura_avl=17  reconstrucciones= 15  busqueda seq=0.033 ms / avl=0.030 ms  |  insercion seq=  0.54 s / avl=0.07 s
+k=   8  reconstrucciones= 55  auxiliar=   8  insercion=  1.01 s  busqueda en datos= 12.5 accesos  en auxiliar=  20.7 accesos
+k=  16  reconstrucciones= 29  auxiliar=  16  insercion=  0.52 s  busqueda en datos= 12.6 accesos  en auxiliar=  25.7 accesos
+k=  32  reconstrucciones= 15  auxiliar=  32  insercion=  0.27 s  busqueda en datos= 12.5 accesos  en auxiliar=  32.5 accesos
+k=  64  reconstrucciones=  7  auxiliar=  64  insercion=  0.14 s  busqueda en datos= 12.5 accesos  en auxiliar=  68.6 accesos
+k= 128  reconstrucciones=  3  auxiliar= 128  insercion=  0.07 s  busqueda en datos= 12.4 accesos  en auxiliar= 134.3 accesos
+
+resultados en resultados/

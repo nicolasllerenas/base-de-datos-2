@@ -1,0 +1,30 @@
+-- work_mem = 64kB
+-- SELECT from_date, COUNT(*) FROM employees.department_employee GROUP BY from_date;
+
+                                                                        QUERY PLAN                                                                         
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize GroupAggregate  (cost=29628.35..30418.62 rows=6079 width=12) (actual time=40.347..43.023 rows=6393 loops=1)
+   Group Key: from_date
+   Buffers: shared hit=2121, temp read=1848 written=2962
+   ->  Gather Merge  (cost=29628.35..30327.43 rows=6079 width=12) (actual time=40.344..42.396 rows=12767 loops=1)
+         Workers Planned: 1
+         Workers Launched: 1
+         Buffers: shared hit=2121, temp read=1848 written=2962
+         ->  Sort  (cost=28628.34..28643.53 rows=6079 width=12) (actual time=39.409..39.688 rows=6384 loops=2)
+               Sort Key: from_date
+               Sort Method: external merge  Disk: 184kB
+               Buffers: shared hit=2121, temp read=1848 written=2962
+               Worker 0:  Sort Method: external merge  Disk: 184kB
+               ->  Partial HashAggregate  (cost=25032.66..28141.28 rows=6079 width=12) (actual time=19.517..38.634 rows=6384 loops=2)
+                     Group Key: from_date
+                     Planned Partitions: 4  Batches: 21  Memory Usage: 93kB  Disk Usage: 6920kB
+                     Buffers: shared hit=2113, temp read=1784 written=2884
+                     Worker 0:  Batches: 33  Memory Usage: 93kB  Disk Usage: 4056kB
+                     ->  Parallel Seq Scan on department_employee  (cost=0.00..4063.61 rows=195061 width=4) (actual time=0.002..4.218 rows=165802 loops=2)
+                           Buffers: shared hit=2113
+ Planning:
+   Buffers: shared hit=131
+ Planning Time: 0.259 ms
+ Execution Time: 44.073 ms
+(23 rows)
+

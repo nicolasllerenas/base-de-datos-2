@@ -1,0 +1,16 @@
+TPMMS sobre data/employee.bin ordenando por hire_date
+  buffer_size       : 65536
+  buffer_pages      : 16
+  fan_in            : 15
+  input_pages       : 4349
+  runs_generated    : 272
+  merge_passes      : 3
+  pages_read        : 17396
+  pages_written     : 17396
+  time_phase1_sec   : 0.5378
+  time_phase2_sec   : 1.6641
+  time_total_sec    : 2.2019
+  runs esperados    : ceil(4349/16) = 272
+  salida ordenada   : data/employee_sorted.bin (300024 registros verificados)
+  primer registro   : (110022, '1956-09-12', 'Margareta', 'Markovitch', 'M', '1985-01-01')
+  ultimo registro   : (463807, '1964-06-12', 'Bikash', 'Covnot', 'M', '2000-01-28')

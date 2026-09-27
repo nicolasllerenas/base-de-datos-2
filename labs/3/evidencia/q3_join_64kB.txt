@@ -1,0 +1,21 @@
+-- work_mem = 64kB
+-- SELECT * FROM employees.employee e JOIN employees.department_employee d ON d.employee_id = e.id;
+
+                                                            QUERY PLAN                                                             
+-----------------------------------------------------------------------------------------------------------------------------------
+ Hash Join  (cost=11575.54..24105.04 rows=331603 width=56) (actual time=192.561..532.091 rows=331603 loops=1)
+   Hash Cond: (d.employee_id = e.id)
+   Buffers: shared hit=4594, temp read=4422 written=4422
+   ->  Seq Scan on department_employee d  (cost=0.00..5429.03 rows=331603 width=21) (actual time=0.002..7.794 rows=331603 loops=1)
+         Buffers: shared hit=2113
+   ->  Hash  (cost=5481.24..5481.24 rows=300024 width=35) (actual time=164.079..164.080 rows=300024 loops=1)
+         Buckets: 1024  Batches: 512  Memory Usage: 50kB
+         Buffers: shared hit=2481, temp written=1867
+         ->  Seq Scan on employee e  (cost=0.00..5481.24 rows=300024 width=35) (actual time=0.002..8.103 rows=300024 loops=1)
+               Buffers: shared hit=2481
+ Planning:
+   Buffers: shared hit=302
+ Planning Time: 0.422 ms
+ Execution Time: 537.791 ms
+(14 rows)
+
